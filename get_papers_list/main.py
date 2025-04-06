@@ -2,9 +2,6 @@ import argparse
 import sys
 from get_papers_list.fetcher import fetch_pubmed_ids, fetch_article_details, save_to_csv
 
-
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description="Fetch research papers based on query and save to CSV.")
     parser.add_argument("query", type=str, help="Query string for PubMed search.")
