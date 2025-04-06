@@ -4,31 +4,27 @@ Fetch research papers from PubMed using a query, filter those with at least one 
 
 ## 🧩 Project Structure
 
-get-papers-list/ \
-├── get_papers_list/ \
-│   ├── init.py \
-│   ├── fetcher.py # Handles PubMed queries and article parsing \
-│   ├── utils.py # Utilities for filtering and email extraction \
-│   ├── writer.py # Handles writing the results to a CSV \
-│   └── main.py # Entry point for the CLI application \
-├── pyproject.toml # Poetry configuration \
-├── poetry.lock # Lock file for deterministic installs \
-└── README.md # You’re reading it!\
-
-## ⚙️ Setup Instructions
+``` bash
+get-papers-list/ 
+├── get_papers_list/ 
+│   ├── init.py 
+│   ├── fetcher.py # Handles PubMed queries and article parsing 
+│   ├── utils.py # Utilities for filtering and email extraction 
+│   ├── writer.py # Handles writing the results to a CSV 
+│   └── main.py # Entry point for the CLI application 
+├── pyproject.toml # Poetry configuration 
+├── poetry.lock # Lock file for deterministic installs 
+└── README.md # You’re reading it!
+```
 
 ## 🛠️ Setup Instructions
-
-
-
-
 
 ### 1. Prerequisites
 
 - Python >= 3.11
 - [Poetry](https://python-poetry.org/docs/#installation)
 
-Install Poetry:
+#### Install Poetry:
 
 ```bash
 curl -sSL https://install.python-poetry.org | python3 -
