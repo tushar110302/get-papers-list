@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "get-papers-list"  
+version = "0.1.0"
+description = "Get research papers based on user-specified query with at least one author affiliated with a pharmaceutical or biotech company."
+authors = ["Tushar Ranjan <thrrnjn1103@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "get_papers_list" }
+]
+
+[tool.poetry.scripts]
+get-papers-list = "get_papers_list.main:main"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+biopython = ">=1.85,<2.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
