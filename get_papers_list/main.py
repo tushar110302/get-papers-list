@@ -1,6 +1,7 @@
 import argparse
 import sys
-from get_papers_list.fetcher import fetch_pubmed_ids, fetch_article_details, save_to_csv
+from get_papers_list.fetcher import fetch_pubmed_ids, fetch_article_details
+from get_papers_list.writer import save_to_csv
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Fetch research papers based on query and save to CSV.")
